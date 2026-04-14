@@ -1,12 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Art Hub</title>
+    <title>The Art Hub (TAM)</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body style="font-family: Arial, sans-serif; padding: 24px;">
-    <h1>The Art Hub Preview</h1>
-    <p>Deployment check passed. Web entrypoint exists.</p>
+  <body>
+    <header>
+      <div><strong>The Art Hub</strong></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="feed.html">Feed</a></li>
+          <li><a href="gigs/index.html">Gigs</a></li>
+          <li><a href="messages.html">Messages</a></li>
+          <li><a href="tokens.html">Access</a></li>
+        </ul>
+      </nav>
+      <a class="btn" href="auth/signup.html">Join the Hub</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Street-forward creative community built for Africa.</h1>
+          <p>
+            The Art Hub connects creators, clients, and culture. Showcase your work,
+            lock in gigs, and get paid through secure escrow.
+          </p>
+          <div style="display:flex;gap:16px;flex-wrap:wrap;">
+            <a class="btn" href="auth/signup.html">Get Started</a>
+            <a class="btn secondary" href="onboarding.html">Preview Onboarding</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Access Model</h3>
+          <p>Free browse + token passes + subscriptions.</p>
+          <div class="grid-2">
+            <div><div class="tag">Free</div><p>Browse feed, profiles, and gigs (limited).</p></div>
+            <div><div class="tag">Token</div><p>Apply/post gigs, send DMs, join collabs.</p></div>
+            <div><div class="tag">Subscription</div><p>Unlimited access + pro perks and boosts.</p></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">Built for creatives in Nigeria • Token access ₦200/day</footer>
   </body>
 </html>
