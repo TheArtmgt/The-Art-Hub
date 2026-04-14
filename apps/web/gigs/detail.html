@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gig Detail - The Art Hub</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <div><strong>The Art Hub</strong></div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../feed.html">Feed</a></li>
+          <li><a href="index.html">Gigs</a></li>
+          <li><a href="../messages.html">Messages</a></li>
+        </ul>
+      </nav>
+      <a class="btn" href="new.html">Post a Gig</a>
+    </header>
+
+    <main class="section">
+      <h1 class="page-title">Afrobeats EP Mix</h1>
+      <div class="notice">
+        Token/subscription required to apply. <a href="../tokens.html">Get access</a>.
+      </div>
+
+      <div class="grid-2" style="margin-top: 24px;">
+        <div class="card">
+          <h3>Gig Details</h3>
+          <p>Mix and master a 5-track EP with Afro-fusion textures.</p>
+          <p><strong>Budget:</strong> NGN 150,000</p>
+          <p><strong>Deadline:</strong> 14 days</p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span class="tag">Mixing</span>
+            <span class="tag">Mastering</span>
+            <span class="tag">Afrobeats</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Apply to gig</h3>
+          <form class="form">
+            <label>Message <textarea rows="4" placeholder="Introduce yourself"></textarea></label>
+            <label>Portfolio link <input type="url" placeholder="https://soundcloud.com/..." /></label>
+            <button class="btn" type="button">Apply (Token gated)</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
