@@ -1,45 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Messages - The Art Hub</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div><strong>The Art Hub</strong></div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="feed.html">Feed</a></li>
-          <li><a href="gigs/index.html">Gigs</a></li>
-          <li><a href="messages.html">Messages</a></li>
-          <li><a href="tokens.html">Access</a></li>
-        </ul>
-      </nav>
-      <a class="btn" href="tokens.html">Activate Access</a>
-    </header>
-
-    <main class="section">
-      <h1 class="page-title">Messages</h1>
-      <div class="grid-2">
-        <div class="card">
+<main class="main container">
+      <h2 class="page-title">Messages</h2>
+      <section class="grid-2">
+        <article class="card">
           <h3>Conversations</h3>
           <ul>
             <li>DJ Ada ↔ Tayo (2 unread)</li>
             <li>VisualK ↔ Lami</li>
           </ul>
-        </div>
-        <div class="card">
+        </article>
+        <article class="card">
           <h3>Chat</h3>
-          <p class="notice">Token required to send messages.</p>
+          <div class="chat-list">
+            <p class="chat-bubble received">Can you send your portfolio link?</p>
+            <p class="chat-bubble sent">Sure, sending it now.</p>
+          </div>
           <form class="form">
-            <label>Message <textarea rows="4" placeholder="Say hello"></textarea></label>
-            <button class="btn" type="button">Send (Token gated)</button>
+            <label>Message <textarea rows="4" placeholder="Let's work"></textarea></label>
+            <button class="btn btn-primary" data-token-action type="button">Send</button>
           </form>
-        </div>
-      </div>
+        </article>
+      </section>
     </main>
+
+    <section class="token-modal" data-token-modal>
+      <article class="token-modal-card">
+        <h3>Activate Access</h3>
+        <p>Messaging requires a token pass (₦200/day).</p>
+        <div class="action-row">
+          <a class="btn btn-primary" href="tokens.html">Buy Token</a>
+          <button class="btn btn-secondary" data-close-token-modal type="button">Close</button>
+        </div>
+      </article>
+    </section>
+
+    <nav class="bottom-nav">
+      <a href="feed.html">Feed</a>
+      <a href="gigs/index.html">Gigs</a>
+      <a href="messages.html">Messages</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+
+    <script src="app.js"></script>
   </body>
 </html>
