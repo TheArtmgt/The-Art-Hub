@@ -1,44 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gigs - The Art Hub</title>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <body>
-    <header>
-      <div><strong>The Art Hub</strong></div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../feed.html">Feed</a></li>
-          <li><a href="index.html">Gigs</a></li>
-          <li><a href="../messages.html">Messages</a></li>
-          <li><a href="../tokens.html">Access</a></li>
-        </ul>
-      </nav>
-      <a class="btn" href="new.html">Post a Gig</a>
-    </header>
-
-    <main class="section">
-      <h1 class="page-title">Gig Marketplace</h1>
-      <p>Free users see limited gig details. Activate a token to apply.</p>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Afrobeats EP Mix</h3>
-          <p class="tag">Remote • NGN 150,000</p>
-          <p>Mix and master a 5-track EP with Afro-fusion textures.</p>
-          <a class="btn secondary" href="detail.html">View details</a>
+ <main class="main container">
+      <h2 class="page-title">Gigs</h2>
+      <section class="card">
+        <h3>Filters</h3>
+        <div class="grid-2">
+          <label>Genre <select><option>Afrobeats</option><option>Amapiano</option></select></label>
+          <label>Location <select><option>Remote</option><option>Lagos</option></select></label>
+          <label>Skill <select><option>Producer</option><option>Videographer</option></select></label>
         </div>
-        <div class="card">
-          <h3>Poster Design for Festival</h3>
-          <p class="tag">In-person • Lagos</p>
-          <p>Limited details visible. Activate a token to view full scope.</p>
-          <a class="btn secondary" href="detail.html">View details</a>
-        </div>
-      </div>
+      </section>
+
+      <section class="section cards">
+        <article class="card gig-card">
+          <h3>Looking for Producer</h3>
+          <p class="muted">Budget: ₦50,000 • Remote</p>
+          <div class="action-row">
+            <a class="btn btn-secondary" href="detail.html">Details</a>
+            <button class="btn btn-primary" data-token-action type="button">Apply Now</button>
+          </div>
+        </article>
+
+        <article class="card gig-card">
+          <h3>Need Mixing Engineer</h3>
+          <p class="muted">Budget: ₦150,000 • Surulere, Lagos</p>
+          <div class="action-row">
+            <a class="btn btn-secondary" href="detail.html">Details</a>
+            <button class="btn btn-primary" data-token-action type="button">Apply Now</button>
+          </div>
+        </article>
+      </section>
     </main>
+
+    <section class="token-modal" data-token-modal>
+      <article class="token-modal-card">
+        <h3>Activate Access</h3>
+        <p>Apply to gigs and unlock messaging for ₦200/day.</p>
+        <div class="action-row">
+          <a class="btn btn-primary" href="../tokens.html">Buy Token</a>
+          <button class="btn btn-secondary" data-close-token-modal type="button">Close</button>
+        </div>
+      </article>
+    </section>
+
+    <script src="../app.js"></script>
   </body>
 </html>
