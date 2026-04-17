@@ -1,48 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile - The Art Hub</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div><strong>The Art Hub</strong></div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="feed.html">Feed</a></li>
-          <li><a href="gigs/index.html">Gigs</a></li>
-          <li><a href="messages.html">Messages</a></li>
-          <li><a href="tokens.html">Access</a></li>
-        </ul>
-      </nav>
-      <a class="btn" href="onboarding.html">Edit Profile</a>
-    </header>
+<main class="main container">
+      <section class="card profile-card">
+        <div class="avatar">DA</div>
+        <h2>DJ Ada</h2>
+        <p class="muted">Afrobeats • Surulere LGA, Lagos</p>
+        <p>Afro-fusion producer blending Lagos rhythms with soulful textures.</p>
+      </section>
 
-    <main class="section">
-      <h1 class="page-title">DJ Ada</h1>
-      <p>Surulere, Lagos • Producer • Afrobeats</p>
-      <div class="grid-2">
-        <div class="card">
-          <h3>Bio</h3>
-          <p>Afro-fusion producer blending Lagos rhythms with soulful textures.</p>
-          <h4>Skills</h4>
-          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-            <span class="tag">Producer</span>
-            <span class="tag">Songwriter</span>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Links</h3>
+      <section class="section grid-2">
+        <article class="card">
+          <h3>Portfolio Links</h3>
           <ul>
             <li>Instagram: @dj_ada</li>
             <li>Audiomack: audiomack.com/dj-ada</li>
             <li>YouTube: youtube.com/@djada</li>
           </ul>
-        </div>
-      </div>
+        </article>
+
+        <article class="card">
+          <h3>Skills</h3>
+          <div class="badge-list">
+            <span class="tag">Producer</span>
+            <span class="tag">Songwriter</span>
+            <span class="tag">Mix Engineer</span>
+          </div>
+        </article>
+      </section>
     </main>
+
+    <nav class="bottom-nav">
+      <a href="feed.html">Feed</a>
+      <a href="gigs/index.html">Gigs</a>
+      <a href="messages.html">Messages</a>
+      <a href="profile.html">Profile</a>
+    </nav>
   </body>
 </html>
