@@ -1,51 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Art Hub (TAM)</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div><strong>The Art Hub</strong></div>
+<header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">The Art Hub</a>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
+        <ul class="nav-list">
+          <li><a href="dashboard.html">Dashboard</a></li>
           <li><a href="feed.html">Feed</a></li>
           <li><a href="gigs/index.html">Gigs</a></li>
           <li><a href="messages.html">Messages</a></li>
-          <li><a href="tokens.html">Access</a></li>
+          <li><a href="tokens.html">Tokens</a></li>
         </ul>
       </nav>
-      <a class="btn" href="auth/signup.html">Join the Hub</a>
-    </header>
+      <a class="btn btn-primary" href="auth/signup.html">Join The Hub</a>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero">
-        <div>
-          <h1>Street-forward creative community built for Africa.</h1>
-          <p>
-            The Art Hub connects creators, clients, and culture. Showcase your work,
-            lock in gigs, and get paid through secure escrow.
-          </p>
-          <div style="display:flex;gap:16px;flex-wrap:wrap;">
-            <a class="btn" href="auth/signup.html">Get Started</a>
-            <a class="btn secondary" href="onboarding.html">Preview Onboarding</a>
-          </div>
+  <main class="main">
+    <section class="container hero-layout">
+      <article class="component-stack">
+        <h1>Build your creative career with The Art Hub.</h1>
+        <p class="muted">Discover featured creatives, apply for paid gigs, and collaborate with local talent in a token-powered marketplace.</p>
+        <div class="action-row">
+          <a class="btn btn-primary" href="auth/signup.html">Join The Hub</a>
+          <a class="btn btn-secondary" href="feed.html">Explore Feed</a>
         </div>
-        <div class="card">
-          <h3>Access Model</h3>
-          <p>Free browse + token passes + subscriptions.</p>
-          <div class="grid-2">
-            <div><div class="tag">Free</div><p>Browse feed, profiles, and gigs (limited).</p></div>
-            <div><div class="tag">Token</div><p>Apply/post gigs, send DMs, join collabs.</p></div>
-            <div><div class="tag">Subscription</div><p>Unlimited access + pro perks and boosts.</p></div>
-          </div>
-        </div>
-      </section>
-    </main>
+      </article>
 
-    <footer class="footer">Built for creatives in Nigeria • Token access ₦200/day</footer>
-  </body>
-</html>
+      <aside class="card">
+        <h3>Featured Creatives</h3>
+        <article class="profile-card">
+          <div class="avatar">DB</div>
+          <strong>Davido Beats</strong>
+          <p class="muted">Afrobeats • Surulere, Lagos</p>
+          <button class="btn btn-accent">View Profile</button>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">The Art Hub • Token access starts at ₦200/day</footer>
+
+  <nav class="bottom-nav">
+    <a href="feed.html">Feed</a>
+    <a href="gigs/index.html">Gigs</a>
+    <a href="messages.html">Messages</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+</body>
+apps/web/index.html
