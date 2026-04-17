@@ -1,0 +1,49 @@
+ <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">The Art Hub</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="feed.html">Feed</a></li>
+          <li><a href="gigs/index.html">Gigs</a></li>
+          <li><a href="messages.html">Messages</a></li>
+          <li><a href="tokens.html">Tokens</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary" href="profile.html">Profile</a>
+    </div>
+  </header>
+
+  <main class="main container dashboard-layout">
+    <aside class="dashboard-sidebar">
+      <h3>Navigation</h3>
+      <a href="feed.html">Feed</a>
+      <a href="gigs/index.html">Gigs</a>
+      <a href="messages.html">Messages</a>
+      <a href="profile.html">Profile</a>
+    </aside>
+
+    <section class="component-stack">
+      <h2 class="page-title">Dashboard</h2>
+      <article class="card">
+        <h3>Feed</h3>
+        <p class="muted">Discover new creative posts from your network.</p>
+      </article>
+      <article class="card">
+        <h3>Gigs</h3>
+        <p class="muted">Track opportunities filtered by genre, location, and skill.</p>
+      </article>
+      <article class="card">
+        <h3>Messages</h3>
+        <p class="muted">Collaborate directly with creators and clients.</p>
+      </article>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="feed.html">Feed</a>
+    <a href="gigs/index.html">Gigs</a>
+    <a href="messages.html">Messages</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+</body>
