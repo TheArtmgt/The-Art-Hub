@@ -1,48 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Art Hub - Feed</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div><strong>The Art Hub</strong></div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="feed.html">Feed</a></li>
-          <li><a href="gigs/index.html">Gigs</a></li>
-          <li><a href="messages.html">Messages</a></li>
-          <li><a href="tokens.html">Access</a></li>
-        </ul>
-      </nav>
-      <a class="btn" href="profile.html">My Profile</a>
-    </header>
-
-    <main class="section">
-      <h1 class="page-title">Creative Feed</h1>
-      <div class="grid-2">
-        <div class="card">
-          <h3>Share a post</h3>
-          <form class="form">
-            <label>Content link <input type="url" placeholder="https://youtube.com/..."></label>
-            <label>Caption <textarea rows="4" placeholder="What’s the story?"></textarea></label>
-            <label>Tags <input type="text" placeholder="#afrobeats #design"></label>
-            <button class="btn" type="button">Post to feed</button>
-          </form>
-        </div>
-        <div class="card">
-          <h3>Trending tags</h3>
-          <div style="display:flex;flex-wrap:wrap;gap:8px;">
-            <span class="tag">Afrobeats</span>
-            <span class="tag">Visual Art</span>
-            <span class="tag">Content Creator</span>
-            <span class="tag">Surulere</span>
+<main class="main container">
+      <h2 class="page-title">Feed</h2>
+      <section class="cards">
+        <article class="card feed-card">
+          <div class="thumbnail"></div>
+          <h3>New Track</h3>
+          <p class="muted">youtube.com/...</p>
+          <div class="action-row">
+            <button class="btn btn-secondary">Like</button>
+            <button class="btn btn-secondary">Comment</button>
           </div>
-        </div>
-      </div>
+        </article>
+
+        <article class="card feed-card">
+          <div class="thumbnail"></div>
+          <h3>Behind the Scenes</h3>
+          <p class="muted">Shot in Yaba, Lagos.</p>
+          <div class="action-row">
+            <button class="btn btn-secondary">Like</button>
+            <button class="btn btn-secondary">Comment</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Share a Post</h3>
+          <form class="form">
+            <label>Content link <input type="url" placeholder="https://youtube.com/..." /></label>
+            <label>Caption <textarea rows="4" placeholder="Tell your story"></textarea></label>
+            <button class="btn btn-primary" type="button">Publish</button>
+          </form>
+        </article>
+      </section>
     </main>
+
+    <nav class="bottom-nav">
+      <a href="feed.html">Feed</a>
+      <a href="gigs/index.html">Gigs</a>
+      <a href="messages.html">Messages</a>
+      <a href="profile.html">Profile</a>
+    </nav>
   </body>
 </html>
